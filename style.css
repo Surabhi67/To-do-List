@@ -1,0 +1,79 @@
+.bg{
+    background-image: url("wallpaper2you_428855.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+ .main{
+    background-color: whitesmoke;
+    width: 85%;
+    height: 85%;
+    margin: 50px 80px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 20px ;
+    text-align: center;
+}
+
+.task
+{
+  width: 350px;
+}
+
+ul li
+{
+  user-select: none;
+  list-style-type:none; 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-align: left;
+  margin-left: 30px;
+  position: relative;
+  padding-left: 40px;
+}
+
+ul li.checked
+{
+  text-decoration: line-through;
+  background-color: bisque;
+}
+
+ul li:hover
+{
+  background-color: beige;
+}
+
+ul li.checked::before
+{
+  content: '';
+  border-style: solid;
+  border-width: 0 2px 2px 0;     
+  position: absolute;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+ul li.checked:hover
+{
+  background-color: bisque;
+}
+
+.close
+{
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.close:hover
+{
+  background-color: brown;
+}
